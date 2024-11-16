@@ -189,6 +189,7 @@ def search(request):
 from django.shortcuts import redirect, get_object_or_404
 from .models import Product, Cart
 
+# this is add to cart section
 def add_to_cart(request):
     if request.method == 'POST':
         product_id = request.POST.get('product_id')
