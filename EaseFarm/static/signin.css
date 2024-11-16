@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Spartan', sans-serif;
+}
+body{
+background: url("pic2.jpg") no-repeat center center fixed;
+background-size: cover;
+}
+
+.container{
+
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+}
+.container h1{
+  display: inline-block;
+  font-size: 40px;
+  border-bottom: 5px solid black;
+
+  /* margin-bottom: 43px; */
+  padding: 13px 0;
+}
+.box{
+  width: 100%;
+  margin: 22px 0px;
+  border-bottom: 2px solid black;
+
+}
+
+.box input{
+  background: none;
+  color: white;
+  width: 75%;
+  margin: 12px 0px;
+  padding: 5px 10px;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+
+}
+
+.warning{
+font-size: 16px;
+font-weight: bold;
+}
+
+.btn{
+  color: white;
+  cursor: pointer;
+  outline: none;
+  margin: 12px 0px;
+  padding: 10px 21px;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 18px;
+  background: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  color: black;
+  background: white;
+}
+.down a{
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+
+}
+.up{
+  font-size: 16px;
+  font-weight: bold;
+}
+.up a{
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}

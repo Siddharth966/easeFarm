@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+body {
+  background: #e3e6f3;
+}
+
+#reg{
+
+  background-color: #e3e6f3;
+  background-size: cover;
+  background-position: top 25% right 0;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: fixed;
+}
+
+#reg figure {
+  width: 50%;
+  overflow: hidden;
+  border-radius: 50%;
+  float: right;
+
+}
+
+h3 {
+  font-size: 35px;
+  line-height: 64px;
+}
+#reg h3 {
+  padding-bottom: 15px;
+}
+
+.reg1{
+  width: 100%;
+  margin: 22px 0px;
+  border-bottom: 2px solid black;
+
+
+}
+
+.reg1 input{
+
+  background: none;
+  color: black;
+  width: 75%;
+  margin: 12px 0px;
+  padding: 5px 10px;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+
+}
+
+.btn1{
+  background-color: #088178;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: white;
+
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+}
+.btn1:hover {
+  color: black;
+  background: #088178;
+}
+
+.already{
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.already a{
+
+  text-decoration: none;
+  color: #088178;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.already:hover a{
+  color: black;
+
+}

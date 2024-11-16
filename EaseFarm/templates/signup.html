@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SignUp</title>
+{% load static %}
+<link rel="stylesheet" href="{% static 'signup1.css' %}"/>
+</head>
+<body>
+    <section id = "reg">
+<div >
+
+        <h3> Registration Form</h3>
+
+    <form action="{% url 'signup' %}" method="POST" >
+        {% if messages %}
+        {% for message in messages %}
+         <p {% if message.tags %} class="alert alert-{{message.tags}} mb-5" {% endif %}>{{message}}</p>
+        {% endfor %}
+        {% endif %}
+        {% csrf_token %}
+		{% for fm in form %}
+        <div class = "reg1">
+            {{ fm.label_tag }} {{fm}} <br> <small >{{fm.errors|striptags}}</small>
+        </div>
+        {% endfor %}
+		<input  class = "btn1" type="submit" value="Submit" >
+        <br>
+        <div class = "already" >Already have an account ? <a href="{% url 'login' %}">Seller Login</a></div>
+
+        <div class = "already" > <a href="{% url 'login1' %}">Buyer login</a></div>
+
+        {% if form.non_field_errors %}
+        {% for error in form.non_field_errors %}
+        <p id = "err">{{errors}}</p>
+        {% endfor %}
+        {% endif %}
+    </form>
+</div>
+<img src="{% static 'Registration.jpg' %}" alt="Registration Image" style="width: 99%; height: 670px;">
+
+</section>
+</body>
+</html>

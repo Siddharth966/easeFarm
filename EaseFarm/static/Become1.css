@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Spartan', sans-serif;
+
+}
+
+#rental{
+padding-top: 50px;
+display: flex;
+flex-direction: row;
+gap: 20px;
+background-color:#e3e6f3;
+}
+
+.rent1 h3{
+font-size: 25px;
+margin-top: 0px;
+margin-bottom: 30px;
+
+}
+
+.rent1{
+padding: 10px 10px 0px 10px;
+margin-top: 74px;
+margin-left: 33px;
+margin-right: 100px;
+}
+
+.rent1 input{
+ background-color: #e3e6f3;
+  color: black;
+
+  display:block;
+  margin: 10px 0px;
+  padding: 5px 10px;
+  font-size: 15px;
+  border: 1px solid ;
+  border-radius: 4px;
+  font-weight: bold;
+
+  border-radius: 5px;
+  outline: none;}
+
+.rental1{
+justify-content: center;
+}
+
+.btn1{
+  background-color: #088178;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: white;
+
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+}
+.btn1:hover {
+  color: black;
+  background: #088178;
+}
+
+#rental figure {
+  width: 50%;
+  overflow: hidden;
+  border-radius: 5%;
+  float: right;
+
+  }

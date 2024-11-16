@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css1.css' %}" />
+  <title></title>
+  <link rel="shortcut icon" href="img/favicon-96x96.png">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+</head>
+
+<body>
+<section id="header">
+
+<a href="#"><img src="{% static 'img/logo.png' %}" width = 60 height = 60 class = "logo" alt="" /></a>
+<div>
+  <ul id="navbar">
+    <li> <a  href="/">Home</a></li>
+    <li> <a class="active"href="BorrowProduct.html">Purchase-Product</a></li>
+    <li> <a href="Become_supplier">Seller-Product</a></li>
+    <li> <a href="/about">About</a> </li>
+    <li> <a href="/contact">Contact</a></li>
+
+    <li> <a href="#l"><i class="far fa-shopping-bag"></i></a></li>
+    <li><a href="login">Login</a></li>
+  </ul>
+</div>
+
+
+</section>
+
+<section id = "prodetails" class="section-p1">
+  <div class="single-pro-image">
+    <img src = "{% static 'img/Products/Mancozeb.png' %}" width="100%" id="MainImg" alt="" />
+  </div>
+  <div class="single-pro-details">
+    <h6> Home/ Mancozib</h6>
+    <h4>Mancozib with zinc</h4>
+    <h2>&#8377;800 per litre</h2>
+    <select>
+      <option>Select Number of litre</option>
+      <option>1 litre</option>
+      <option>2 litre</option>
+      <option>3 litre</option>
+      <option>4 litre</option>
+      <option>More than 4 litre</option>
+    </select>
+    <input type="number" value="1">
+    <button class="normal">Add To Cart</button>
+    <h4>Product Details</h4>
+    <span>Protect your home garden from early and late blight with Mancozeb Flowable with Zinc Fungicide from Bonide!<br>
+      Apply this fungicide as a preventative treatment for broad-spectrum protection against diseases.<br>
+      Active ingredient Zinc is an essential nutrient that promotes healthy vegetation! Apply as needed to vegetables, fruits, nuts, ornamentals, flowers and more for a healthy crop.<br>
+      Mancozeb Flowable with Zinc protects your home garden from common fungal diseases including blight, anthracnose, leaf spot, rust, mildew and more.<br>
+      Our starting renting price is &#8377; 800 per litre
+    </span>
+
+  </div>
+</section>
+
+<section id="newsletter" class="section-p1 section-m1">
+  <div class="newstext">
+    <h4>Sign Up for Updates</h4>
+    <p>Get E-main Updates about new pesticides and  <span>special offers</span>
+    </p>
+  </div>
+  <div class="form">
+ <input type="text" placeholder="Your email address">
+ <button class="normal">Sign Up</button>
+  </div>
+</section>
+
+<footer class="section-p1">
+  <div class="col">
+    <img class = "logo" src="{% static 'img/logo.png' %}" width = 60 height = 60 class = "logo"alt="" />
+    <h4>Contact</h4>
+    <p><strong>Address:</strong> Pune</p>
+    <p><strong>Phone:</strong> (+91)9621014735 / (+91)7400708738 <br>
+     (+91)9516435326 / (+91)9098075884
+    </p>
+    <div class="follow">
+      <h4>Follow Us</h4>
+      <div class="icon">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <h4>About</h4>
+    <a href="#">About us</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms and Conditions</a>
+  </div>
+
+  <div class="col">
+    <h4>My Account</h4>
+    <a href="#">Sign In</a>
+    <a href="#">View Cart</a>
+    <a href="#">My Wishlist</a>
+    <a href="#">Help</a>
+  </div>
+
+  <div class="col-install">
+    <p>Secured Payment Gateways</p>
+    <img src="{% static 'img/payment/upi.png' %}" width = 50 height = 50  alt="" />
+    <img src="{% static 'img/Payment/phonepe.png' %}" width = 50 height = 50  alt="" />
+    <img src="{% static 'img/Payment/paytm.png' %}" width = 50 height = 50  alt="" />
+    <img src="{% static 'img/Payment/Google-pay.png' %}" width = 50 height = 50  alt="" />
+
+  </div>
+  <div class="copyright">
+    <p>@ 2024 EaseFarm AITR</p>
+  </div>
+</footer>
+
+</body>
+</html>

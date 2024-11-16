@@ -1,0 +1,44 @@
+{% load custom_filters %}
+
+<section id="cart" class="section-p1">
+    <table width="100%">
+        <thead>
+            <tr>
+                <td>Remove</td>
+                <td>Image</td>
+                <td>Product</td>
+                <td>Price per kg</td>
+                <td>Quantity</td>
+                <td>Subtotal</td>
+            </tr>
+        </thead>
+        <tbody>
+            {% if cart %}
+                {% for item in cart %}
+                <tr>
+                    <td><a href="{% url 'remove-from-cart' item.product.id %}"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="{{ item.product.image.url }}" alt="{{ item.product.title }}"></td>
+                    <td>{{ item.product.title }}</td>
+                    <td>&#8377;{{ item.product.rent_price }}</td>
+                    <td>
+                        <form action="{% url 'update-cart' item.product.id %}" method="post" class="quantity-form">
+                            {% csrf_token %}
+                            <input type="number" value="{{ item.quantity }}" id="quantity-{{ item.product.id }}" name="quantity" min="1" required>
+                        </form>
+                    </td>
+                    <td>&#8377;{{ item.quantity|multiply:item.product.rent_price }}</td>
+                </tr>
+                {% endfor %}
+            {% else %}
+                <tr>
+                    <td colspan="6">Your cart is empty.</td>
+                </tr>
+            {% endif %}
+        </tbody>
+    </table>
+
+   <div class="cart-totals">
+        <h3>Cart Totals</h3>
+        <p>Total Amount: &#8377;{{ total_amount }}</p>  <!-- Display total amount here -->
+    </div>
+</section>

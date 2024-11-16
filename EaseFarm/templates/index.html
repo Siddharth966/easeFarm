@@ -1,0 +1,234 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Home {% endblock title %}
+{% block body %}
+
+<section id="main" xmlns="http://www.w3.org/1999/html">
+<div>
+  <h2>Find the best Pesticides</h2>
+  <h4>Upload your Own Pesticides</h4>
+  <p>Save more with coupons!</p>
+  <button>Shop now</button>
+</div>
+  <figure >
+    <img src="https://img.freepik.com/premium-photo/indian-farmer-showing-smartphone-screen-agriculture-field_75648-6508.jpg"alt="Wheat" width="100%" height="580px">
+  </figure>
+</section>
+
+<section id="feature" class="section-p1 ">
+  <div class="fe-box">
+    <img src="static/img/features/save time.png" width="100px" height="100px" alt="">
+    <h6>Save time</h6>
+  </div>
+  <div class="fe-box">
+    <img src="static/img/features/f2.png" width="100px" height="100px" alt="">
+    <h6>Online Order</h6>
+  </div>
+  <div class="fe-box">
+    <img src="static/img/features/f3.png" width="100px" height="100px" alt="">
+    <h6>Save Money</h6>
+  </div>
+  <div class="fe-box">
+    <img src="static/img/features/f5.png" width="100px" height="100px" alt="">
+    <h6>Happy Customers</h6>
+  </div>
+  <div class="fe-box">
+    <img src="static/img/features/f6.png" width="100px" height="100px" alt="">
+    <h6>24/7 Support</h6>
+  </div>
+</section>
+<section id = "product-1" class="section-p1">
+  <h2>Featured Products</h2>
+  <h6>Agriculture Pesticides at Best Price</h6>
+  <div class="pro-container">
+    <div class="pro">
+      <a href="{% url 'static-Product-Detail' %}"><img src="static/img/Products/Mancozeb.png" alt=""></a>
+      <div class="des">
+        <span>Mancozib</span>
+       <H5>Mancozib with zinc</H5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h4>&#8377;800 Per litre </h4>
+      </div>
+      <a href="{% url 'add-to-cart' %}"><i class="fas fa-shopping-cart cart"></i></a>
+    </div>
+    <div class="pro">
+      <a href="{% url 'static-Product-Detail1' %}"><img src="static/img/Products/Coopex.png" alt=""></a>
+      <div class="des">
+        <span>Coopex </span>
+        <H5>Coopex 241 DI</H5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>   
+        </div>
+        <h4>&#8377;800 Per kg</h4>
+      </div>
+      <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+    </div>
+    <div class="pro">
+      <img src="static/img/Products/Carman.png" alt="">
+      <div class="des">
+        <span>Carman</span>
+        <H5>Carman-22</H5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h4>&#8377;499 Per kg </h4>
+      </div>
+      <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+    </div>
+    <div class="pro">
+      <img src="static/img/Products/Ultimator.png" alt="">
+      <div class="des">
+        <span>Ultimator</span>
+        <H5>Ultimator 400</H5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h4>&#8377;399 Per kg </h4>
+      </div>
+      <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+    </div>
+    <div class="pro">
+      <img src="static/img/Products/f-5.png" alt="">
+      <div class="des">
+        <span>Sprinkler</span>
+        <H5>Sprinkler Irrigation</H5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h4>&#8377;800 Per Hour </h4>
+      </div>
+      <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+    </div>
+    <div class="pro">
+      <img src="static/img/Products/f-6.jpg" alt="">
+      <div class="des">
+        <span>Power Sprayer</span>
+        <H5>2 Stroke</H5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h4>&#8377;800 Per Hour </h4>
+      </div>
+      <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+    </div>
+    <div class="pro">
+      <img src="static/img/Products/Boost.png" alt="">
+      <div class="des">
+        <span>Boost</span>
+        <H5>Boost-52</H5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h4>&#8377;300 Per kg </h4>
+      </div>
+      <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+    </div>
+    <div class="pro">
+      <img src="static/img/Products/P-Zyme.png" alt="">
+      <div class="des">
+        <span>P-ZYME</span>
+        <H5>P-ZYME 275 DI</H5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h4>&#8377;949 Per kg </h4>
+      </div>
+      <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+    </div>
+  </div>
+</section>
+<section id="newsletter" class="section-p1 section-m1">
+  <div class="newstext">
+    <h4>Sign Up for Updates</h4>
+    <p>Get E-mail Updates about new Pesticide and  <span>special offers</span>
+    </p>
+  </div>
+  <div class="form">
+<!-- <input type="text" placeholder="Your email address">-->
+    <h4 >Create an account</h4>
+    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+ <button class="normal" type="button" onclick="location.href='signup'">signup</button>
+  </div>
+</section>
+
+<footer class="section-p1">
+  <div class="col">
+    <img class = "logo" src="static/img/logo.png" width = 60 height = 60 alt="">
+    <h4>Contact</h4>
+    <p><strong>Address:</strong> Pune</p>
+    <p><strong>Phone:</strong> (+91)9621014735 / (+91)7400708738 <br>
+     (+91)9516435326 / (+91)9098075884
+    </p>
+    <div class="follow">
+      <h4>Follow Us</h4>
+      <div class="icon">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <h4>About</h4>
+    <a href="#">About us</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms and Conditions</a>
+  </div>
+
+  <div class="col">
+    <h4>My Account</h4>
+    <a href="login">Sign In</a>
+    <a href="#">View Cart</a>
+    <a href="#">My Wishlist</a>
+    <a href="#">Help</a>
+  </div>
+
+  <div class="col-install">
+    <p>Secured Payment Gateways</p>
+    <img src="static/img/payment/upi.png" width = 50 height = 50  alt="">
+    <img src="static/img/Payment/phonepe.png" width = 50 height = 50  alt="">
+    <img src="static/img/Payment/paytm.png" width = 50 height = 50  alt="">
+    <img src="static/img/Payment/Google-pay.png" width = 50 height = 50  alt="">
+
+  </div>
+  <div class="copyright">
+    <p>@ 2024 EaseFarm AITR</p>
+  </div>
+</footer>
+{% endblock body %}

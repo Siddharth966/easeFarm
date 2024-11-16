@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You</title>
+  <script src="https://kit.fontawesome.com/387fbf0d2f.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  {% load static %}
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+      font-family: "Sour Gummy", sans-serif;
+
+    }
+
+    p {
+        font-family: "Lora", serif;
+
+      color: #555;
+    }
+
+    h2 {
+      color: #28a745;
+      margin: 20px 0;
+      font-family: "Lora", serif;
+
+    }
+
+    .payment-methods {
+      margin-top: 30px;
+    }
+    .payment-methods button {
+        border-radius :40px
+        background-color: transparent; /* Make the background transparent */
+        padding: 0; /* Remove any padding */
+        border-radius: 40px;
+    }
+
+    .payment-methods img {
+        cursor: pointer;
+
+        height: 4vw;
+        width: 4vw;
+        animation: hoverMove 1s ease-in-out infinite alternate;
+
+    }
+    @keyframes hoverMove {
+        from {
+            transform: translateY(0);
+        }
+        to {
+            transform: translateY(-10px);
+        }
+    }
+    .payment-methods {
+        display: flex;
+        justify-content: center; 
+        gap: 3rem; 
+    }
+ 
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Thank You for Your Purchase!</h1>
+    <p>Your order has been placed successfully.</p>
+
+    <!-- Display the grand total -->
+    <h2>Total Amount: &#8377;{{ grand_total }}</h2>
+
+    <h3>Select a Payment Method</h3>
+    <div class="payment-methods">
+       <img src="{% static 'img/phonepe.png' %}" alt="PhonePe">
+       <img src="{% static 'img/googlepay.png' %}" alt="Google Pay">
+        <img src="{% static 'img/paymentcard.png' %}" alt="Card Payment">
+</div>
+</body>
+</html>

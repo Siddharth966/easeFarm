@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+body {
+  background: #e3e6f3;
+}
+#level {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.p1 {
+  padding: 10px 10px 0px 10px;
+  margin-top: 80px;
+  margin-left: 120px;
+  margin-bottom: 200px;
+  margin-right: 100px;
+}
+.p1 h3 {
+  font-size: 22px;
+}
+.p1 li {
+  list-style: none;
+  padding-top: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  position: relative;
+}
+
+.p1 li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a1a1a;
+  transition: 0.3s ease;
+}
+
+.p1 li a:hover,
+.p1 li a.active {
+  color: #088178;
+}
+
+.p1 li a.active::after,
+.p1 li a:hover::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #088178;
+  position: absolute;
+  bottom: -4px;
+  left: 50px;
+}
+
+.p2 {
+  padding: 10px 10px 0px 10px;
+  margin-top: 74px;
+  margin-left: 33px;
+  margin-right: 100px;
+}
